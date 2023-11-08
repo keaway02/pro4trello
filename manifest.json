@@ -1,7 +1,7 @@
 {
 "update_url": "https://clients2.google.com/service/update2/crx",
 
-    "manifest_version": 2,
+    "manifest_version": 3,
 
     "name": "Pro for Trello, FREE Trello tweaks",
     "short_name": "Pro for Trello",
@@ -21,22 +21,32 @@
     },
 
     "permissions": [
-        "*://trello.com/*", "tabs", "storage"
+        "tabs",
+        "storage"
+    ],
+    "host_permissions": [
+        "*://trello.com/*"
     ],
 
     "web_accessible_resources": [
-        "img/*",
-        "css/*",
-        "tmpl/*",
-        "docs/*",
-        "lib/*",
-        "board.html",
-        "options.html"
+        {
+            "resources": [
+                "img/*",
+                "css/*",
+                "tmpl/*",
+                "docs/*",
+                "lib/*",
+                "board.html",
+                "options.html"
+            ],
+            "matches": [
+                "*://*/*"
+            ]
+        }
     ],
 
     "background": {
-        "scripts": ["js/events.js"],
-        "persistent": false
+        "service_worker": "js/events.js"
     },
 
     "content_scripts": [{
@@ -53,7 +63,5 @@
         ],
         "run_at": "document_idle",
         "all_frames": true
-    }],
-
-    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+    }]
 }
