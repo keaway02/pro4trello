@@ -4,7 +4,7 @@
     margin-right: 5px;
 }
 
-.js-list {
+.js-list-container {
     position: relative;
     width: 99% !important;
     display: block;
@@ -24,6 +24,6 @@
     background-color: rgba(0, 0, 0, 0.75);
 }
 
-.tpro-show-list-stats .list-wrapper {
+.tpro-show-list-stats li[data-testid="list-wrapper"] {
     padding-bottom: 10px !important;
 }

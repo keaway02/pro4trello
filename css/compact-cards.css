@@ -1,9 +1,9 @@
-.list-card {
+li[data-testid="list-card"] div[data-testid="trello-card"] {
     max-width: 100%;
     margin-bottom: 2px;
     border-bottom: 1px solid #fafafa;
 }
 
-.list-card-title {
+a[data-testid="card-name"] {
     margin-bottom: 1px !important;
 }
