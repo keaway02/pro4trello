@@ -1,13 +1,15 @@
-.list-card {
+li[data-testid="list-card"] {
   overflow: hidden;
 }
 
-.list-card-labels {
+/*
+@TODO: parent of span[data-testid="compact-card-label"] {
   display: block;
   margin: 0 !important;
 }
+*/
 
-.list-card-labels .card-label {
+span[data-testid="compact-card-label"] {
   display: inline !important;
   height: inherit !important;
   width: auto !important;
@@ -23,17 +25,17 @@
   text-overflow: inherit !important;
 }
 
-body.tpro-card-labels-size-small .list-card-labels .card-label {
+body.tpro-card-labels-size-small span[data-testid="compact-card-label"] {
   font-size: 8px;
   line-height: 13px;
 }
 
-body.tpro-card-labels-size-medium .list-card-labels .card-label {
+body.tpro-card-labels-size-medium span[data-testid="compact-card-label"] {
   font-size: 10px;
   line-height: 14px;
 }
 
-body.tpro-card-labels-size-large .list-card-labels .card-label {
+body.tpro-card-labels-size-large span[data-testid="compact-card-label"] {
   font-size: 12px;
   line-height: 15px;
 }

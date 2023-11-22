@@ -1,16 +1,16 @@
-.js-fill-card-detail-desc {
+.js-fill-card-detail-desc .js-desc.js-show-with-desc {
   background: linear-gradient(to bottom,#fff 0,#F8F9F9 100%);
   padding: 10px;
   border-radius: 2px;
   border: 1px solid #E2E4E6;
-  border-bottom-color: #CDD2D4:
+  border-bottom-color: #CDD2D4;
 }
 
-.js-fill-card-detail-desc h1 {
+.js-fill-card-detail-desc .js-desc.js-show-with-desc h1 {
   border-bottom: 2px solid #7f8c8d;
 }
 
-.js-fill-card-detail-desc h2 {
+.js-fill-card-detail-desc .js-desc.js-show-with-desc h2 {
   display: inline-block;
   border-bottom: 1px dashed #7f8c8d;
 }
